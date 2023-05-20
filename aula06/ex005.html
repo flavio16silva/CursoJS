@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros Passos com DOM</title>
+
+  <style>
+     
+     body {
+      background: rgba(0, 98, 255, 0.757);
+      color: white;
+      font: normal 18pt Arial;
+     }
+
+  </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p> <!--Primeiro Paragrafo = 0-->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p> <!--Segundo Paragrafo = 1-->
+    <div id="msg">Clique em mim</div>
+    <div name="msg">Clicando em mim</div>
+    <div id="seletor">Testando querySelector</div>
+
+    <script>
+      var corpo = window.document.body
+      var p1 = window.document.getElementsByTagName('p')[1]  // A contagem no JS começa do número ZERO. Nessa linha abaixo estamos retornando a 1º tag "p".
+      //window.document.write('Esta escrito assim: ' + p1.innerText) //Retornando informação do 1º paragrafo
+      corpo.style.background = 'black'
+      p1.style.color = 'blue' //Alterando a cor do paragrafo
+
+      document.write(p1.innerHTML)
+      // window.alert(p1.innerHTML)
+
+      var d = window.document.getElementById('msg') // Por id
+      d.style.background = 'green'
+      d.innerText = 'Estou aguardando...' // Comando resumido
+      //window.document.getElementById('msg').innerText = 'Olá!' // Comando completo
+
+      var f = window.document.getElementsByName('msg')[0] // Por nome
+      f.innerText = 'Olá! - no lugar de Clicando em mim'
+
+      var g = window.document.querySelector('div#seletor') // Por querySelector
+      g.style.color = 'blue'
+
+    </script>
+</body>
+</html>
+
+<!-- Utilizando DOM
+por Marca → getElementsByTagName()
+por ID → getElementsById()
+por Nome → getElementsByName()
+por Classe → getElementsByClassName()
+por Seletor → querySelector()
+querySelectorAll()
+
+Utilizando Selector
+Toda <div> é representada por uma #
+Ex.: <div id = ‘msg’> Clique em mim</div>
+var d = window.document.querySelector(’div#msg’)
+
+Toda Classe é representada por um . (ponto)
+Ex.: <div class = ‘msg’> Clique em mim</div>
+var d = window.document.querySelector(’div.msg’) -->
