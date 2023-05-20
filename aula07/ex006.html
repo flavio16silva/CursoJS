@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+
+  <style>
+    #area {
+      font: normal 20px Arial;
+      text-transform: uppercase;
+      background: rgb(28, 215, 28);
+      color:#fff;
+      width:10em;
+      height:10em;
+      text-align: center;
+      line-height: 10em;
+      border-radius: 5px;
+    }
+  </style>  
+
+</head>
+<body>
+
+  <div id="area" > <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair(): Eventos retirados do HTML-->
+      Interaja...
+  </div>
+
+  <script>
+    var a = window.document.getElementById('area') //Funciona como um escopo global para as 3 functions
+    // Criando lista de eventos no JS
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() { //Primeiro metodo
+          a.innerText = 'Clicou!'
+          a.style.textTransform = 'lowercase'
+          a.style.color = 'white'
+          a.style.background = 'green'
+        }
+
+        function entrar() { //Segundo metodo
+          a.innerText = 'Entrou!'
+          a.style.textTransform = 'uppercase'
+          a.style.color = 'blue'
+          a.style.background = 'red'
+          
+        }
+
+        function sair() { //Terceiro metodo
+          a.innerText = 'Saiu!'
+          a.style.textTransform = 'uppercase'
+          a.style.color = 'white'
+          a.style.background = 'blue'
+        }
+
+  </script>
+
+</body>
+</html>
