@@ -1,0 +1,55 @@
+body {
+    background: rgba(58, 185, 181, 0.965);
+    font: normal 1.3em Arial;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+  color: #ffff;
+  text-align: center;  
+
+}
+
+section{
+    background: #ffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 40%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324); /* Deslocamento lateral, Deslocamento vertical, espalhamento, cor  */
+}
+
+div {
+  text-align: center;
+  padding: 8px;
+}
+
+/*Imagem do Dia*/
+img {
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+}
+
+footer {
+  color: #ffff;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+  header > h1 { 
+      font-size: 1.2em;
+  }
+
+
+}
