@@ -5,7 +5,7 @@ function verificar () {
   var res = document.querySelector('div#res')     //Buscando pelo id - resultado
 
   if (formano.value.length == 0 || formano.value > ano) { //Verifica se o comprimento do valor é igual a zero OU valor acima de ano.
-    window.alert('[ERRO] Verifique dos dados e tente novamente')
+    window.alert('[ERRO] Preencha os dados e tente novamente')
   } else {
         var fsex = document.getElementsByName('radsex') // Pegando a referência pelo "name" do componente
         var idade = ano - Number(formano.value)         // Calculando a idade
