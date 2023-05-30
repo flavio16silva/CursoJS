@@ -4,10 +4,10 @@ function carregar () {
 var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 var data = new Date() //Pegando a data do dia
-//var hora = data.getHours() // Pegando a hora atual
+var hora = data.getHours() // Pegando a hora atual
 var min = data.getMinutes()
 var segundo = data.getSeconds()
-var hora = 23
+//var hora = 23
 msg.innerHTML = `Agora são ${hora} horas  ${min} minutos e ${segundo} segundos.`
 
 
@@ -31,6 +31,9 @@ if (hora >= 0 && hora < 12) {
 
 
 }
+
+
+
 
 /* O Construtor  new Date()  retorna um OBJETO de DATA com: DIA da SEMANA, DATA, HORA ATUAL e FUSO HORÁRIO. Ex:
 Fri Nov 04 2022 08:30:47 GMT-0300 (Horário Padrão de Brasília)
