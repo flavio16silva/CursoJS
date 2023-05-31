@@ -42,7 +42,7 @@ function verificar () {
         }
         res.style.textAlign = 'center'                //Centralizando o texto pelo JS.       
         res.innerHTML =  `<p> Detectamos um ${genero} com ${idade} anos. </p>` // Redimensionar o texto e a imagem
-        res.appendChild(img)                          // Mostrar a imagem na tela
+        res.appendChild(img)                          // Adicionar um elemento/ Mostrar a imagem na tela.
   }
 
 
