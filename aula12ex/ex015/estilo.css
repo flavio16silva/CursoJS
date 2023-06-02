@@ -18,6 +18,29 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324); /* Deslocamento lateral, Deslocamento vertical, espalhamento, cor  */
 }
 
+#botao {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgba(58, 185, 181, 0.965);
+  color: #ffff;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 0px #015f2d48;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* #botao:hover {
+ background:#006000;
+ box-shadow:0 5px 0 #003f00;
+} */
+
+#botao:active {
+  position:relative;
+  top:5px;
+  box-shadow: none;
+}
+
 footer {
   color: #ffff;
   text-align: center;
