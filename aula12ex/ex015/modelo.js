@@ -12,7 +12,7 @@ function contar() {
     res.style.fontWeight = '700'   //Trabalhando com Estilo no JS
     res.innerHTML = ('Não consigo contar!')
     //window.alert('[ERRO] FALTAM INFORMAÇÕES!')
-    
+
   } else {
     //alert('INFORMAÇÕES CORRETAS!')
     res.innerHTML = 'Contando: ... <br>'
@@ -32,7 +32,7 @@ function contar() {
       //Contagem Crescente
       for(let c = i; c <= f ; c += p){
         res.style.textAlign = 'center'
-        res.innerHTML += ` ${c} ` /* Unicode só funcina com Crases. */
+        res.innerHTML += ` ${c} \u{27A1}` /* Unicode só funcina com Crases. */
         
   }
     } else {
