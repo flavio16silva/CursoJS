@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interatividade</title>
+  <title>Tabuada</title>
   <link rel="stylesheet" href="estilo.css"> <!--Executando CSS-->
 </head>
 <body>
   
     <header>
-          <h1>Título</h1>
+          <h1>Tabuada em JavaScript</h1>
     </header>
 
    <section>
                 <div>
-                      Testando...
+                      <p>Digite um número: <input type="number" name="num" id="txtnum"></p>
+                      <p><input type="button" value="Calcular Tabuada" id="botao" onclick="calcular()"></p>
                 </div>
                 <div>
-
+                      <select name="tabuada" id="stab" size="10"> <!--Aumentando o tamanho do select-->
+                        <option>Digite um número acima</option>
+                      </select>
+                      
                 </div>
+
+                <!-- <div id="res">
+                      <p>Processando número...</p>  
+                </div> -->
     </section>
 
     <footer>
