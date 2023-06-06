@@ -1,5 +1,6 @@
-let valores = [8, 1, 7, 4, 2, 9]
+let valores = [8, 100, 7, 4, 2, 9]
 valores.sort()            //ordenando de forma crescente
+//valores.sort((a, b) => a - b)
 console.log(valores)      //impressão no console
 
 /*for (let pos=0; pos < valores.length; pos++){
