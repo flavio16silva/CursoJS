@@ -9,7 +9,7 @@ function calcular() {
     var c = 1
     tab.innerHTML = ``           //Antes de começar a tabuada, a area será limpa.
 
-    while (c <= 10){ //Enquanto o contador for >= 10
+    while (c <= 10){ //Enquanto o contador for <= 10
       let item = document.createElement('option') //adicionando elementos 'options' como no HTML
       item.text = `${n} x ${c} = ${n*c}` //Inserindo os valores dentro do options - Uso da Template String
       tab.appendChild(item)              // Aparecer o valor, ou seja, adicionar um elemento filho
