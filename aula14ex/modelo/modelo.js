@@ -38,18 +38,21 @@ function adicionar() { //Analisando "Se será um número e senão estiver em lis
     }else {
       window.alert('Valor incorreto ou encontrado na lista!')
     }
+
     //Para apagar o valor após digitado
-    num.value = '' //começar vazio
-    num.focus()    // manter o cursor do mouse para digitar novo número
+    num.value = ''                                      //começar vazio, limpando o campo da digitação
+    num.focus()                                         // manter o cursor do mouse para digitar novo número
 }
 
 
 // ======================== 3º PARTE ====================================
 function finalizar() {
-  if (valores.length == 0) {
+  if (valores.length == 0) {                    //Se o vetor estiver vazio
     window.alert('Insira valores antes de finalizar!')
   } else {
-    let total = valores.length                  //Recebendo total de valores na lista
+    //  VARIAVEIS CRIADAS PARA ESSA FUNÇÃO
+
+    let total = valores.length                  //Recebendo total de valores na lista. Qtd de elementos no vetor. 
     let maior = valores[0]                      //Recebendo o primeiro valor
     let menor = valores[0]                      //Recebendo o primeiro valor
     let soma = 0                                //Recebendo a soma
@@ -57,7 +60,7 @@ function finalizar() {
 
     //Laço de percurso para percorrer todo o array
     for (let pos in valores) {                   //Para cada posição dentro de: valores
-      soma += valores[pos]                      //soma dos valores dentro do laço: for
+      soma += valores[pos]                       //soma dos valores dentro do laço: for
     if (valores[pos] > maior) {
       maior = valores[pos]
     } else {
@@ -65,7 +68,9 @@ function finalizar() {
     }
      media = soma / total                       //media dos valores
   }
-    res.innerHTML = '' 
+    res.innerHTML = ''                          // Receberá os valores e nesse momento começará zerado.
+
+    // ===== RETORNOS NA TELA =========== 
     res.innerHTML += `<p>Temos ao todo ${total} números cadastrados. </p>`
     res.innerHTML += `<p>Na lista temos como maior valor o número: ${maior}. </p>`
     res.innerHTML += `<p>Na lista temos como menor valor o número: ${menor}. </p>`
